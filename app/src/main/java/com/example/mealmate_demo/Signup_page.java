@@ -14,8 +14,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.imageview.ShapeableImageView;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -24,7 +26,12 @@ public class Signup_page extends AppCompatActivity {
 
     Button signup_btn;
 
+
+
     FirebaseAuth firebaseAuth;
+
+    GoogleSignInClient googleSignInClient;
+    ShapeableImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

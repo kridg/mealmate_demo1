@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#DBCDCD"
+    tools:context=".Add_recipe">
+        <LinearLayout
+            android:id="@+id/linear_recipeImg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            >
+        <ImageView
+            android:id="@+id/addRecipe_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/ic_launcher_round"
+            />
+            <EditText
+                android:id="@+id/dish_name"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Dish Name"/>
+            <EditText
+                android:id="@+id/recipe_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Recipe"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_spinner"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Ingredients:"
+                android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/addRecipe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:text="Add Recipe"/>
+
+</LinearLayout>
